@@ -11,7 +11,6 @@ Alternatively (elif), if you rent the car for 3 or more days, you get $20 off yo
 You cannot get both of the above discounts.
 """
 
-CODE :
 def hotel_cost(nights):
   """Caclulate hotel cost
   Args:
