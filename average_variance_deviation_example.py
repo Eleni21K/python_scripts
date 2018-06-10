@@ -21,21 +21,35 @@ def grades_sum(grades_input):
   total = 0
   for score in scores: 
     total += score
+
   return total
     
 def grades_average(grades_input):
+  """Get average of grades.
+  Args:
+    grades_input (list): list or grades
+  Returns:
+    average (float): average of the grades
+  """
   sum_of_grades = grades_sum(grades_input)
   average = sum_of_grades / float(len(grades_input))
+
   return average
 
 def grades_variance(scores):
+  """
+  Args:
+
+  Returns:
+    result ():
+  """
   average = grades_average(scores)
   variance = 0
   for score in scores:
     variance += (average-score)**2
   result = variance/len(scores)
+  
   return result
-
 
 
 def grades_std_deviation(variance):
