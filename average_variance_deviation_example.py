@@ -1,12 +1,23 @@
-#Let's see how the grades varied against the average. This is called computing the variance.
+# Find how the grades varied against the average. This is called computing the variance.
 
-grades = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
+# Listof grades:
+grades_input = [100, 100, 90, 40, 80, 100, 85, 70, 90, 65, 90, 85, 50.5]
 
 def print_grades(grades_input):
+  """Print the list of grades.
+  Args:
+    grades_input (list): list of grades
+  """
   for grade in grades_input:
     print grade
 
-def grades_sum(scores):
+def grades_sum(grades_input):
+  """Get sum of grades.
+  Args:
+    grades_input (list): list or grades
+  Returns:
+    total (float): sum of the grades
+  """
   total = 0
   for score in scores: 
     total += score
